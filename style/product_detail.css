@@ -1,0 +1,190 @@
+/*商品详情的样式*/
+.product_img img{
+    width: 100%;
+}
+.product_pare ul li{
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+
+.product_pare ul li span{
+    color: #999;
+    display: block;
+    width: 150px;
+    float: left;
+}
+
+.product_pare .product_price {
+    font-size: 50px;
+    color: #4dce2e;
+    font-weight: normal;
+    padding: 20px 0;
+}
+
+.product_pare .quantily_wrap {
+    margin-right: 10px;
+    float: left;
+}
+.product_pare .quantily_wrap label {
+    float: left;
+}
+
+.product_pare .quantily_wrap .form-item {
+    padding: 10px 15px;
+    border-radius: 0;
+    border: 1px solid #eee;
+    margin-bottom: 0;
+    padding-right: 2px;
+    background: #fff;
+    height: 42px;
+    width: 50px;
+    text-align: center;
+
+}
+
+.ht-btn {
+    padding: 0 17px;
+    border: none;
+    height: 42px;
+    line-height: 44px;
+    color: #333;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size: 13px;
+    margin-top: 0;
+    outline: none;
+}
+.bg-3 {
+    background-color: #ff5656;
+    color: #fff;
+}
+
+.desc{
+    padding:20px 25px;
+    border: 1px solid #ddd;
+}
+
+.rbanner{
+    background-image: url(../images/tomato-663097_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 100%;
+    padding: 20px;
+    background-size: 100%;
+    color: #fff;
+}
+
+.rbanner .caption {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.caption>*{
+    margin: 0;
+}
+.heading-size-3 {
+    font-size: 45px;
+    font-weight: 900;
+    padding: 0 0 15px 0;
+    line-height: 1;
+}
+.heading-size-5 {
+    font-size: 25px;
+    padding: 0 0 15px 0;
+}
+
+.rbanner .ht-btn-bg-2 {
+    margin-top: 20px;
+    border: 2px solid #fff;
+    background: none;
+    line-height: 40px;
+    border-radius: 0;
+    color: #fff;
+}
+.list-border {
+    width: 250px;
+}
+.list-border li {
+    border: 1px solid #eee;
+    padding: 7px 15px;
+    margin-bottom: -1px;
+}
+/*�ֲ�����*/
+.wrap{
+    overflow: hidden;
+    width: 100%;
+    height: 335px;
+}
+.wrap .bigbox{
+    width: 150%;
+    min-width: 2280px;
+    position: relative;
+}
+
+.wrap .box1{
+    width: 50%;
+    left: 0;
+    height: 335px;
+    min-width: 1140px;
+    position: absolute;
+}
+
+.wrap .box2{
+    width: 50%;
+    left: 1140px;
+    height: 335px;
+    min-width: 1140px;
+    position: absolute;
+}
+
+/*放大镜效果*/
+#sm_pic img{
+    cursor: pointer;
+}
+
+
+.lgwrap{
+    position: relative;
+
+}
+.lgwrap .smark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 25%;
+    background: lightgoldenrodyellow;
+    opacity: 0.4;
+    z-index: 1;
+}
+.lgwrap .supermark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+
+.lgwrap .superpic{
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    background-repeat:no-repeat;
+    background-color: white;
+}
+

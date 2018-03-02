@@ -1,0 +1,30 @@
+/* 购物车*/
+.tcart th:nth-child(1){
+    text-align: center;
+}
+.tcart th:nth-child(3){
+    text-align: center;
+}
+.tcart > tbody > tr > td{
+    vertical-align: middle;
+}
+.cart_item .price{
+    text-align: center;
+}
+
+.cart_item .title{
+    text-align: center;
+}
+.cart_item .title a{
+    display: inline-block;
+    color: black;
+}
+.cart_item .count input{
+   text-align: center;
+}
+
+.tpa{
+    display: block;
+    height: 100%;
+
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账户登录</title>
+    <!--<link rel="stylesheet" href="style/base.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="style/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootbase.css">
+    <link rel="stylesheet" href="style/login.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="proloade">
+    <i class="glyphicon glyphicon-refresh"></i>
+</div>
+
+<!--头部-->
+
+    <header>
+
+    </header>
+    <!--导航-->
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-xs-5 bg-green">
+                    <div class="dropdown">
+                        <a data-toggle="dropdown" class="btn btn-success btn-green"><span class="glyphicon glyphicon-menu-hamburger"></span>菜单分类</a>
+                        <ul class="dropdown-menu tld_menu">
+                            <li>
+                                <a href="product_detail.html?fid=3"><img src="images/6.jpg" width="50" alt="..."/> <span class="ml-10">蜜桃</span></a>
+                            </li>
+                            <li>
+                                <a href="product_detail.html?fid=9"><img src="images/9.jpg" width="50" alt="..."/> <span class="ml-10">草莓</span></a>
+                            </li>
+                            <li>
+                                <a href="product_detail.html?fid=6"><img src="images/12.jpg" width="50" alt="..."/> <span class="ml-10">梨子</span></a>
+                            </li>
+                            <li>
+                                <a href="product_detail.html?fid=16"><img src="images/19.jpg" width="50" alt="..."/> <span class="ml-10">胡萝卜</span></a>
+                            </li>
+                            <li>
+                                <a href="product_detail.html?fid=11"><img src="images/11.jpg" width="50" alt="..."/> <span class="ml-10">甜橙</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-md-7 hidden-xs hidden-sm bg-sgreen">
+                    <!--<div class="row">-->
+                        <!--<div class="col-md-2 "><a href="#">主页</a></div>-->
+                        <!--<div class="col-md-2"><a href="#">登录</a></div>-->
+                        <!--<div class="col-md-2 "><a href="#">注册</a></div>-->
+                        <!--<div class="col-md-3 "><a href="#">关于</a></div>-->
+                        <!--<div class="col-md-3 "><a href="#">联系我们</a></div>-->
+                    <!--</div>-->
+                    <ul class="nav nav_bar">
+                        <li><a href="index.html" >主页</a></li>
+                        <li><a href="login.html" >登录</a></li>
+                        <li><a href="register.html">注册</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-7 col-xs-7  hidden-md hidden-lg pull-right text-right  bg-agreen">
+                    <div class="dropdown">
+                        <button data-toggle="dropdown" type="button" class="btn btn-default"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+                        <ul class="dropdown-menu ulr">
+                            <li><a href="#">主页</a></li>
+                            <li><a href="#">登录</a></li>
+                            <li><a href="#">注册</a></li>
+                            <li><a href="#">关于</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-xs-12 bg-sgreen nav_search">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 seachtxt">
+                        <input class="form-control" type="text" placeholder="搜索..."><button class="btn btn-success" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        <ul class="hide">
+                        </ul>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+<!--顶部巨幕-->
+<div class="jumbotron bg-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><span>LOGIN</span></div>
+        </div>
+    </div>
+</div>
+<!--登陆表单-->
+<div class="container form-bg">
+
+            <div class="form-horizontal login-form">
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4  col-xs-offset-1 col-xs-10"><label for="uname">用户名</label></div>
+                    <div class="col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10"><input type="text" class="form-control" id="uname" placeholder="请输入用户名"/></div>
+                    <div class="col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10"><span class="text-danger text-hide">1</span></div>
+                 </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4  col-xs-offset-1 col-xs-10"><label for="pwd">密码</label></div>
+                    <div class="col-sm-offset-4 col-sm-4  col-xs-offset-1 col-xs-10"><input type="password" class="form-control" id="pwd" placeholder="请输入用户名"/></div>
+                    <div class="col-sm-offset-4 col-sm-4  col-xs-offset-1 col-xs-10"><span class="text-danger text-hide">1</span></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4  col-xs-offset-1 col-xs-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"/>自动登陆
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4  col-xs-offset-1 col-xs-10"><button type="button" id="login" class="btn btn-success btn-md">登陆</button></div>
+                </div>
+             </div>
+</div>
+
+
+<!--页脚-->
+<footer>
+
+
+</footer>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/base-s.js"></script>
+<script src="js/login-s.js"></script>
+<script>
+    //proloader
+    $(window).load(function()
+    {
+        $('.proloade i').delay(300).fadeOut();
+        $('.proloade').delay(500).fadeOut('slow');
+        $('body').delay(1000).css({'overflow':'visible'});
+    });
+</script>
+
+</body>
+</html>

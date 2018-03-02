@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,user-scalable=no">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<script>
+    document.getElementsByTagName('html')[0].style.fontSize=window.screen.width/10+"px";
+</script>
+<style>
+    body{
+        margin: 0;
+    }
+    #picwrap{
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+    #piclist{
+        width: 40rem;
+        overflow:hidden;
+    }
+    #piclist img{
+        width: 10rem;
+        float: left;
+    }
+
+    #btns{height:0.3rem;padding:0.2rem 0;margin:0; text-align:center;}
+    #btns span{width:0.3rem;height:0.3rem;margin:0 0.1rem; border:1px solid #000; display:inline-block; box-sizing:border-box; border-radius:0.15rem; vertical-align:top;}
+    #btns .active{background:#f60;}
+</style>
+<body>
+<div id="picwrap">
+    <div id="piclist">
+        <img src="images/6.jpg" alt=""/>
+        <img src="images/7.jpg" alt=""/>
+        <img src="images/8.jpg" alt=""/>
+        <img src="images/9.jpg" alt=""/>
+    </div>
+</div>
+<div id="btns">
+    <span class="active"></span><span></span><span></span><span></span>
+</div>
+
+</body>
+<script>
+    document.ontouchstart=function(e){
+        e.preventDefault();
+    }
+</script>
+</html>

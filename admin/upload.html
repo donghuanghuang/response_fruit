@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .drap_area{
+            width: 200px;
+            height: 200px;
+            border: 3px dashed black;
+            line-height: 200px;
+            text-align: center;
+        }
+        .preview{
+            width: 500px;
+            overflow: hidden;
+            border: 1px solid red;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<!--拖动上传文件
+    1.拖动事件默认行为(打开图片并显示)
+        document 拖动离开 拖动释放 拖动悬停
+
+      获取拖动图片信息
+           e.dataTransfer.files[0]
+           var fileNum = e.dataTransfer.files.length
+           if(fileNum == 0)
+
+      预览 var img = window.webkitURL.createObjectURL(files[0]);
+           var str = `<img src = "${img}" />`;
+           $("#box").html(str);
+      上传由ajax2 提供 FormData(特点 上传二进制文件)
+        var formData = new FormData();
+        formData.append("mypic",files[0]);
+
+
+    -->
+<h1>上传头像</h1>
+<div class="drap_area">将图片拖拽到这里</div>
+<div class="preview"></div>
+
+<script src="js/jquery.js"></script>
+<script>
+    $(function(){
+        $(document).on({
+            dragleave:function(e){
+                e.preventDefault();
+            },
+            drop:function(e){
+                e.preventDefault();
+            },
+            dragenter:function(e){
+                e.preventDefault();
+            },
+            dragover:function(e){
+                e.preventDefault();
+            }
+        });
+
+        var  da = document.querySelector(".drap_area");
+
+        da.ondrop=function(e){
+            e.preventDefault();
+            var filelist = e.dataTransfer.files;
+
+
+
+
+        if(filelist.length==0){
+            alert("没有上传");
+            return;
+        }
+
+        var rs = filelist[0].type.indexOf("image");
+        if(rs==-1){
+            alert("只能上传图片");
+            return;
+        }
+
+        var size =Math.floor(filelist[0].size/1024);
+
+        if(size>512){
+            alert("图片不能超过512KB");
+            return;
+        }
+
+        var filename=filelist[0].name;
+
+        var img = window.webkitURL.createObjectURL(filelist[0]);
+
+        var str =`<img src="${img}" /><p>${filename}</p>`;
+
+        $(".preview").html(str);
+
+        var fd = new FormData();
+
+        fd.append("mypic",filelist[0]);
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open("post","data/upload.php",true);
+
+            xhr.setRequestHeader("X-Requested-With","XMLHttpRequest");
+
+            xhr.send(fd);
+        };
+    });
+</script>
+
+</body>
+</html>

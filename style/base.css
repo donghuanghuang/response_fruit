@@ -1,0 +1,184 @@
+img{
+    vertical-align: middle;
+
+}
+body,ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.cmg:before{
+    content: "";
+    display: table;
+
+}
+.pol{
+    position: absolute;
+    top: 0;
+    left:0;
+}
+#main{
+    width: 80%;
+    margin: 0 auto;
+    min-width: 1080px;
+}
+
+input{
+    outline: none;
+}
+
+header{
+    height: 80px;
+    line-height: 80px;
+}
+.top_nav li{
+    float: left;
+    margin-left: 35px;
+}
+nav{
+    height: 65px;
+    background: #82e629;
+}
+
+a.nav-title{
+    display: inline-block;
+    padding: 22px 45px;
+    color: #fff;
+    font-size: 16px;
+    background: #4dce2e;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav ul a{
+    padding: 22px 20px;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 21px;
+    margin-right: 10px;
+}
+div.search{
+    height: 65px;
+    padding-right: 15px;
+}
+
+div.search input{
+    border: none;
+    color: #333;
+    background: #fff;
+    border-radius: 0px;
+    height: 45px;
+    width: 200px;
+    margin-bottom: 0px;
+    text-indent: 10px;
+    margin-top: 10px;
+}
+
+
+div.search button{
+    color: white;
+    height: 47px;
+    width: 47px;
+    line-height: 45px;
+    text-align: center;
+    background:#4dce2e ;
+    margin-top: 10px;
+    outline: none;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    width: 100%;
+    min-width: 1350px;
+}
+
+footer ul.fot_top{
+    height: 90px;
+    margin: 40px auto;
+    width: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+footer ul.fot_top li{
+    float: left;
+    border: 1px #ccc solid;
+    width: 25%;
+    height: 60px;
+
+    line-height: 60px;
+    text-indent: 20px;
+}
+
+footer ul.fot_top li span{
+   margin-left: 10px;
+}
+
+footer .foot_content{
+    background: #444;
+    height: 351px;
+    color: white;
+}
+.foot_content .big_list>li{
+    float: left;
+    width: 25%;
+    margin-left: 6%;
+}
+.foot_content .big_list {
+    width: 90%;
+    margin: 50px auto 0;
+    height: 298px;
+    background: url("../images/bg-f.jpg") no-repeat right;
+}
+
+.s_list a{
+    color: white;
+}
+
+.s_list li:nth-of-type(1){
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.s_list li:not(:nth-of-type(1)){
+    font-size: 14px;
+    border-bottom: 1px dashed white;
+    padding: 10px 0;
+}
+.foot_content>p{
+    text-align: center;
+    height: 53px;
+    background: #333;
+    margin: 0;
+    line-height: 53px;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+

@@ -1,0 +1,16 @@
+/*登录表单样式*/
+.form-bg{
+    background: url("../images/11.jpg") no-repeat 20% ;
+}
+
+.login-form{
+    margin: 50px 0;
+   background: rgba(255,255,255,0.6);
+    border: 1px #eee solid;
+    padding: 30px;
+
+}
+
+.login-form input:not([type="checkbox"]){
+    min-width: 175px;
+}

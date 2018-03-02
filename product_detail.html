@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品详情</title>
+    <!--<link rel="stylesheet" href="style/base.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="style/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootbase.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/product_detail.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="proloade">
+    <i class="glyphicon glyphicon-refresh"></i>
+</div>
+
+<!--头部-->
+
+<header>
+
+
+</header>
+<!--导航-->
+
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-xs-5 bg-green">
+                <div class="dropdown">
+                    <a data-toggle="dropdown" class="btn btn-success btn-green"><span class="glyphicon glyphicon-menu-hamburger"></span>菜单分类</a>
+                    <ul class="dropdown-menu tld_menu">
+                        <li>
+                            <a href="product_detail.html?fid=3"><img src="images/6.jpg" width="50" alt="..."/> <span class="ml-10">蜜桃</span></a>
+                        </li>
+                        <li>
+                            <a href="product_detail.html?fid=9"><img src="images/9.jpg" width="50" alt="..."/> <span class="ml-10">草莓</span></a>
+                        </li>
+                        <li>
+                            <a href="product_detail.html?fid=6"><img src="images/12.jpg" width="50" alt="..."/> <span class="ml-10">梨子</span></a>
+                        </li>
+                        <li>
+                            <a href="product_detail.html?fid=16"><img src="images/19.jpg" width="50" alt="..."/> <span class="ml-10">胡萝卜</span></a>
+                        </li>
+                        <li>
+                            <a href="product_detail.html?fid=11"><img src="images/11.jpg" width="50" alt="..."/> <span class="ml-10">甜橙</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-md-7 hidden-xs hidden-sm bg-sgreen">
+                    <!--<div class="row">-->
+                    <!--<div class="col-md-2 "><a href="#">主页</a></div>-->
+                    <!--<div class="col-md-2"><a href="#">登录</a></div>-->
+                    <!--<div class="col-md-2 "><a href="#">注册</a></div>-->
+                    <!--<div class="col-md-3 "><a href="#">关于</a></div>-->
+                    <!--<div class="col-md-3 "><a href="#">联系我们</a></div>-->
+                    <!--</div>-->
+                <ul class="nav nav_bar">
+                    <!--<li><a href="index.html" >主页</a></li>-->
+                    <!--<li><a href="login.html" >登录</a></li>-->
+                    <!--<li><a href="register.html">注册</a></li>-->
+                    <!--<li><a href="about.html">关于</a></li>-->
+                    <!--<li><a href="#">联系我们</a></li>-->
+                </ul>
+            </div>
+
+            <div class="col-md-7 col-xs-7  hidden-md hidden-lg pull-right text-right  bg-agreen">
+                <div class="dropdown">
+                    <button data-toggle="dropdown" type="button" class="btn btn-default"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+                    <ul class="dropdown-menu ulr">
+                        <!--<li><a href="#">主页</a></li>-->
+                        <!--<li><a href="#">登录</a></li>-->
+                        <!--<li><a href="#">注册</a></li>-->
+                        <!--<li><a href="#">关于</a></li>-->
+                        <!--<li><a href="#">联系我们</a></li>-->
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 col-xs-12 bg-sgreen nav_search">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 seachtxt">
+                    <input class="form-control" type="text" placeholder="搜索..."><button class="btn btn-success" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    <ul class="hide">
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</nav>
+<!--顶部巨幕-->
+<div class="jumbotron bg-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><span>PRODUCT</span></div>
+        </div>
+    </div>
+</div>
+<!--商品价格/商品图片/描述-->
+<div class="container mt-30">
+    <div class="row">
+        <div class="col-md-7 product_img">
+            <div class="row" id="lg_pic">
+                <div class="col-md-offset-2 col-md-8 lgwrap">
+                    <div class="smark hide"></div>
+                    <div class="supermark"></div>
+                    <div class="superpic hide"></div>
+                    <img src="" alt=""/>
+                </div>
+            </div>
+
+            <div class="row mt-30" id="sm_pic">
+                <!--<div class="col-xs-3">-->
+                    <!--<img src="images/8.jpg" alt=""/>-->
+                <!--</div>-->
+            </div>
+
+        </div>
+        <div class="col-md-5 product_pare">
+            <h1></h1>
+            <ul class="list-unstyled mt-30">
+                <!--<li><span>尺寸:</span>12厘米</li>-->
+                <!--<li><span>成熟期:</span>70~80天</li>-->
+                <!--<li><span>植株密度:</span>50厘米到70厘米之间</li>-->
+                <!--<li><span>植株尺寸:</span>60厘米高, 占地30平方厘米</li>-->
+            </ul>
+            <p class="mt-30"></p>
+            <p class="product_price"></p>
+
+            <div class="quantily_wrap">
+                <label class="control-label" for="input-quantity"></label>
+                <input type="number" value="1" max="99" min="1" size="2" id="input-quantity" class="form-control form-item">
+            </div>
+            <button type="button" class="btn ht-btn bg-3 m-t-0 addcart">加入购物车</button>
+            <p class="mt-30 reviews"></p>
+        </div>
+    </div>
+
+    <!--商品详情-->
+
+    <div class="row mt-30">
+        <div class="col-md-9  desc">
+            <h3>商品详情</h3>
+            <p class="detail2">
+            </p>
+
+            <h3>商品成分</h3>
+            <ul class="spec list-unstyled list-border width-auto-xs">
+                <!--<li>卡路里: 46</li>-->
+                <!--<li>碳水化合物: 9g</li>-->
+                <!--<li>纤维素: 3g</li>-->
+                <!--<li>蛋白质: 1g</li>-->
+                <!--<li>糖类: 6g</li>-->
+                <!--<li>维生素 A: 93% DV</li>-->
+                <!--<li>维生素 C: 317%</li>-->
+                <!--<li>维生素 E: 12%</li>-->
+                <!--<li>维生素 K: 9%</li>-->
+                <!--<li>维生素 B6: 22%</li>-->
+            </ul>
+
+        </div>
+        <div class="col-md-3 hidden-sm hidden-xs">
+            <div class="rbanner">
+                <div class="caption text-center">
+                    <h2 class="heading-size-3 f-bold">100%</h2>
+                    <h3 class="heading-size-5 f-normal">ORGANIC</h3>
+                    <a href="#" class="btn ht-btn ht-btn-bg-2">Read more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--商品滚动轮播-->
+
+    <div class="container mt-30 hidden-xs">
+        <h3>推荐商品</h3>
+        <div class="row">
+            <div class="col-md-12 wrap">
+                <div class="bigbox">
+                    <div class="box1"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!--页脚-->
+<footer>
+
+</footer>
+
+
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/login-s.js"></script>
+<script src="js/base-s.js"></script>
+<script src="js/detail-s.js"></script>
+
+<script>
+    //proloader
+    $(window).load(function()
+    {
+        $('.proloade i').delay(300).fadeOut();
+        $('.proloade').delay(500).fadeOut('slow');
+        $('body').delay(1000).css({'overflow':'visible'});
+    });
+</script>
+
+</body>
+</html>

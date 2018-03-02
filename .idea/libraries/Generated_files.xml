@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/admin/js/pro_add-s.js" />
+        <item url="file://$PROJECT_DIR$/admin/js/user_list-s.js" />
+        <item url="file://$PROJECT_DIR$/admin/js/admin_add-s.js" />
+        <item url="file://$PROJECT_DIR$/js/list-s.js" />
+        <item url="file://$PROJECT_DIR$/admin/js/order_list-s.js" />
+        <item url="file://$PROJECT_DIR$/admin/js/base-s.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/admin/js/texs-s.js" />
+      <root url="file://$PROJECT_DIR$/admin/js/vue-resource-s.js" />
+      <root url="file://$PROJECT_DIR$/admin/js/vue-resource-s.js" />
+      <root url="file://$PROJECT_DIR$/admin/js/pro_add-s.js" />
+      <root url="file://$PROJECT_DIR$/admin/js/user_list-s.js" />
+      <root url="file://$PROJECT_DIR$/admin/js/admin_add-s.js" />
+      <root url="file://$PROJECT_DIR$/js/list-s.js" />
+      <root url="file://$PROJECT_DIR$/admin/js/order_list-s.js" />
+      <root url="file://$PROJECT_DIR$/admin/js/base-s.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

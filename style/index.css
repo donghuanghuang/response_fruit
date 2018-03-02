@@ -1,0 +1,60 @@
+/*主页 轮播样式*/
+.wrap{
+    overflow: hidden;
+
+    height: 335px;
+}
+.wrap .bigbox{
+    width: 200%;
+    min-width: 2280px;
+    position: relative;
+}
+
+.wrap .box1{
+    width: 50%;
+    left: 0;
+    height: 335px;
+    min-width: 1140px;
+    position: absolute;
+}
+
+.wrap .box2{
+    width: 50%;
+    left: 1140px;
+    height: 335px;
+    min-width: 1140px;
+    position: absolute;
+}
+
+
+.box .p_list{
+    width: 25%;
+    padding: 20px;
+    min-width: 285px;
+    float: left;
+}
+
+.p_list .li_ctx:hover{
+    border: 2px solid #ccc;
+}
+
+.p_list .li_ctx{
+    border: 2px solid transparent;
+    position: relative;
+    padding-bottom: 10px;
+    overflow: hidden;
+
+}
+.p_list .price{
+    font-size: 1.5em;
+    color: #ff5656;
+    margin: 15px 0;
+}
+
+
+.p_list .add_cart a{
+    border: 1px solid #82e629;
+    color: #82e629;
+    padding: 5px 10px;
+    transition: .5s;
+}
